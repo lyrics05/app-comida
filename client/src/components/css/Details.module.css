@@ -1,0 +1,47 @@
+.dt{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+
+    border-radius: 10px;
+    font-family: italic;
+    color: #000000;
+    font-size: 17px;
+    background: #f7eac3;
+    padding: 10px 30px 10px 30px;
+    text-decoration: none;
+  }
+  .type{
+    background-color: rgba(219, 100, 15, 0.745);
+    border-radius: 20px;
+    padding: 10px;
+    box-shadow: 4px 4px 10px 10px rgba(0, 0, 0, 0.55);    
+    font-family: italic;
+    color: white;
+}
+.imga{
+    height: 8cm;
+    width: 10cm;
+    border-radius: 18px;
+    box-shadow: 4px 4px 10px 10px rgba(0, 0, 0, 0.55);    
+}
+.title{
+    background-color:rgb(218, 146, 146) ;
+    border-radius: 20px;
+    padding: 10px;
+    box-shadow: 4px 4px 10px 10px rgba(0, 0, 0, 0.55);    
+    font-family: italic;
+}
+
+span{
+    margin-left: 10px;
+}

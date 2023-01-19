@@ -1,0 +1,107 @@
+.cards{
+    display: grid;
+    justify-content: center;
+    grid-template-columns:repeat(3,1fr);
+    gap: 20px;
+
+  
+}
+.back{
+    background-image: url('../img/back2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+   
+    /* display: flex; */
+    /* flex-direction: column; */
+    
+}
+.title{
+    font-size: 50px;
+    color: wheat;
+}
+
+.search{
+  
+    margin-left: 50px;
+    margin-bottom: 25px;
+    margin-top: 15px;
+  }
+  .btnsearch {
+    margin-left: 10px;
+    border-radius: 10px;
+    font-family: italic;
+    color: #000000;
+    font-size: 14px;
+    background: #e6d57e;
+    padding:  3px 13px 3px 13px ;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+  }
+  .inputsearch{
+    border-radius: 5px;
+    background-color: #e6d57e;
+    border: none;
+    height: 40px;
+    width: 500px;
+    text-align: center;
+    font-size: 20px;
+  }
+  .filterC{
+    display: flex;
+    flex-direction: row;
+    justify-content: center ;
+    justify-content: space-evenly ;
+    cursor: pointer;
+  
+  }
+
+  .flexrc{
+  margin-left: 10px;
+  }
+  .refresh{
+  
+    border-radius: 10px;
+    font-family: italic;
+    color:white;
+    font-size: 14px;
+    background-color: rgba(219, 100, 15, 0.745);
+    padding:  3px 13px 3px 13px ;
+    text-decoration: none;
+    cursor: pointer;
+    
+  }
+  .create{
+  
+    border-radius: 10px;
+    font-family: italic;
+    color:white;
+    font-size: 14px;
+    background-color: rgba(219, 100, 15, 0.745);
+    padding:  3px 13px 3px 13px ;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .select{
+    background: rgb(186, 216, 156);
+    cursor: pointer;
+    display:inline-block;
+    justify-content: center;
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px;
+    border-style: groove;
+  }
+  .selectflex{
+    display: flex;
+    justify-content:space-evenly;
+    margin-top: 20px;
+  }
+  .paginado{
+    display: flex;
+    flex-direction: row; 
+    justify-content: center;
+    
+  }
+  

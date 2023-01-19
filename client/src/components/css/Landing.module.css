@@ -1,0 +1,28 @@
+.title{
+    font-size: 100px;
+    color: white;
+}
+.titlecook{
+    display: inline-block;
+    font-size: 50px;
+    margin: 0;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: rgba(219, 100, 15, 0.745);
+    color: blanchedalmond;
+}
+
+.titlefind{
+    font-size:30px;
+    color:white;
+}
+.btn{
+    border: none;
+    background-color: rgba(146, 233, 24, 0.745);;
+    font-size: 25px;
+    font-weight: 400;
+    padding: 15px;
+    border-radius: 5px;
+    color: blanchedalmond ;
+    cursor: pointer;
+}
