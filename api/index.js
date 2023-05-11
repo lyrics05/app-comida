@@ -19,11 +19,13 @@
 //     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 const server = require('./src/app.js');
 const { conn } = require('./src/db.js');
+require("dotenv").config()//esto es para el deploy
+const {PORT} = process.env//esto es para el deploy
 
 // Syncing all the models at once.
 conn.sync({ force: true }).then(() => {
   server.listen(3002
     , () => {
-    console.log('%s listening at 3002'); // eslint-disable-line no-console
+    console.log('%s listening at ',PORT); // eslint-disable-line no-console
   });
 });

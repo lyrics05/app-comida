@@ -1,15 +1,7 @@
 const axios = require("axios");
 const {Recipe,TypeDiet}= require("../db")
-
-
-
-//const API_KEY= '3e37a100491a4b0598712a56b2c69828'//
-//const API_KEY= "e034582b262147f2b66271d5a2d684db"//
-const API_KEY= "63a6d8f9c1d443e19177657ebafd8d0c"//
-//const API_KEY= "29d0b45237204fbe953ec5dd951164cc"//
-//const API_KEY= "f7103bd975c7441d9e9a186d619141cd"
-//const API_KEY="a3b6929e73464124bf42610f1bb86e8b"
-//const API_KEY="da0b96bcc15244ea97c4bd7d68b3c672"
+require("dotenv").config()
+const {API_KEY}=process.env
 
 const getApiInfo = async()=>{
   const apiInfo = await axios.get(`https://api.spoonacular.com/recipes/complexSearch?apiKey=${API_KEY}&number=100&addRecipeInformation=true`,{ 
