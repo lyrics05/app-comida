@@ -24,7 +24,7 @@ const {PORT} = process.env//esto es para el deploy
 
 // Syncing all the models at once.
 conn.sync({ force: true }).then(() => {
-  server.listen(3002
+  server.listen("0.0.0.0"
     , () => {
     console.log('%s listening at ',PORT); // eslint-disable-line no-console
   });
