@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.cb8327a1.chunk.css",
+    "main.js": "/static/js/main.c70e555d.chunk.js",
+    "main.js.map": "/static/js/main.c70e555d.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.1cbd931e.js",
+    "runtime-main.js.map": "/static/js/runtime-main.1cbd931e.js.map",
+    "static/js/2.6e456af3.chunk.js": "/static/js/2.6e456af3.chunk.js",
+    "static/js/2.6e456af3.chunk.js.map": "/static/js/2.6e456af3.chunk.js.map",
+    "static/js/3.7e54de20.chunk.js": "/static/js/3.7e54de20.chunk.js",
+    "static/js/3.7e54de20.chunk.js.map": "/static/js/3.7e54de20.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.cb8327a1.chunk.css.map": "/static/css/main.cb8327a1.chunk.css.map",
+    "static/js/2.6e456af3.chunk.js.LICENSE.txt": "/static/js/2.6e456af3.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/static/media/back2.6c3d30ba.jpg",
+    "static/media/comida1.9b0f353b.webp": "/static/media/comida1.9b0f353b.webp",
+    "static/media/t.3a30af0b.jpg": "/static/media/t.3a30af0b.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1cbd931e.js",
+    "static/js/2.6e456af3.chunk.js",
+    "static/css/main.cb8327a1.chunk.css",
+    "static/js/main.c70e555d.chunk.js"
+  ]
+}
