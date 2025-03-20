@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { getRecipes, dietTypeFilter, aplhabeticalSort, scoreSort, getRecipesByName, dishTypeFilter } from '../actions/index';
+import { getRecipes, dietTypeFilter, aplhabeticalSort, scoreSort, getRecipesByName, dishTypeFilter, getByDb } from '../actions/index';
 import { Link } from 'react-router-dom'
 import Paged from "./Paged"
 import Recipe from './Recipe';
@@ -63,6 +63,11 @@ export default function Home() {
         setPage(1);
         setOrder(`Order ${e.target.value}`);
     }
+    function handleDB(e){
+        e.preventDefault()
+        console.log("hice click")
+        dispatch(getByDb(e.target.value))
+    }
 
     function handleSubmit(e){
         e.preventDefault();
@@ -96,6 +101,11 @@ export default function Home() {
             </div>
 
             <div className={styles.selectflex}>
+                <select onChange={(e)=> handleDB(e)} className={styles.select} name="db" id="db">
+                    <option disabled selected>created at db</option>
+                    <option value="db">Db recipes</option>
+                    <option value="api">API recipes</option>
+                </select>
               
                 <select className={styles.select} name="alphabetical" onChange={e => handleAlphabeticalSort(e)}>
                     <option disabled selected>Alphabetical</option>

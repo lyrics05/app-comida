@@ -1,17 +1,25 @@
 import axios from "axios"
 
-import { GET_RECIPES, GET_RECIPE_DETAILS, DIET_TYPE_FILTER, ALPHABETICAL_SORT, SCORE_SORT, SEARCH_RECIPE,GET_THE_DIETS,DISH_TYPE_FILTER,CLEAN_DETAIL} from './types';
+import { GET_RECIPES, GET_RECIPE_DETAILS, DIET_TYPE_FILTER, ALPHABETICAL_SORT, SCORE_SORT, SEARCH_RECIPE,GET_THE_DIETS,DISH_TYPE_FILTER,CLEAN_DETAIL,GET_DB_RECIPES} from './types';
 
 export function getRecipes() {
     return function(dispatch) {
      axios.get("/recipes")
     .then((response) => {
+        console.log("esto es la respuesta", response.data)
        dispatch({type:GET_RECIPES,payload:response.data})
     }).catch((error) => {
         console.log(error)
     }
     )
 }};
+
+export function getByDb(payload){
+    return{
+        type:GET_DB_RECIPES,
+        payload
+    }
+}
 
 export function getRecipesByName(name) {
     return async function(dispatch) {
@@ -78,7 +86,7 @@ export function hacerRecipe(payload){
     return async function(dispatch){
       try {
         var response = await axios.post("/recipe",payload)
-        alert("ahiuckjfakdkacs")
+        alert("receta creada!")
         return response
       } catch (error) {
         alert(error)

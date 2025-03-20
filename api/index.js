@@ -20,11 +20,11 @@
 const server = require('./src/app.js');
 const { conn } = require('./src/db.js');
 require("dotenv").config()//esto es para el deploy
-const {PORT} = process.env//esto es para el deploy
+const PORT = process.env.PORT || 4000
 
 // Syncing all the models at once.
 conn.sync({ force: true }).then(() => {
-  server.listen("0.0.0.0"
+  server.listen(PORT
     , () => {
     console.log('%s listening at ',PORT); // eslint-disable-line no-console
   });

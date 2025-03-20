@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { getTypeDiets,hacerRecipe } from "../actions/index";
 import { useDispatch,useSelector} from "react-redux";
 import { useState } from "react";
+import {useHistory} from "react-router-dom"
 import styles from"./css/CreateRecipe.module.css"
 
 function controlForm (input){
@@ -16,6 +17,7 @@ function controlForm (input){
 }
 
 const CreateRecipe=()=>{
+    const history = useHistory()
     const dispatch = useDispatch()
     let listDiets = useSelector((state) => state.dietTypes )
     console.log(listDiets)
@@ -65,6 +67,9 @@ const CreateRecipe=()=>{
             analyzedInstructions:'',
             typeDiets:[]
         })
+        setTimeout(()=>{
+           history.push("/home")
+        },2000)
     }
 
     function handleDelete(dieta){

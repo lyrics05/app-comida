@@ -5,7 +5,7 @@ import CreateRecipe from './components/CreateRecipe';
 import Details from './components/Details';
 import Landing from './components/Landing';
 import axios from "axios"
-axios.defaults.baseURL="http://localhost:3002/"
+axios.defaults.baseURL="http://localhost:4000/"
 
 
 

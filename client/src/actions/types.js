@@ -9,3 +9,4 @@ export const GET_DIET_TYPES = "GET_DIET_TYPES";
 export const GET_THE_DIETS = "GET_THE_DIETS";
 export const DISH_TYPE_FILTER = "DISH_TYPE_FILTER";
 export const CLEAN_DETAIL = "CLEAN_DETAIL"
+export const GET_DB_RECIPES = "GET_DB_RECIPES"

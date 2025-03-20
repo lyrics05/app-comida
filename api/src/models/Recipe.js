@@ -33,6 +33,10 @@ module.exports = (sequelize) => {
      
      
     },
+    createdAtDb:{
+      type:DataTypes.BOOLEAN,
+      defaultValue:true
+    }
   
   });
 };

@@ -1,4 +1,5 @@
-import { GET_RECIPES, DIET_TYPE_FILTER, ALPHABETICAL_SORT, SCORE_SORT, SEARCH_RECIPE, GET_RECIPE_DETAILS,GET_THE_DIETS,DISH_TYPE_FILTER, CLEAN_DETAIL } from '../actions/types'
+import { act } from 'react';
+import { GET_RECIPES, DIET_TYPE_FILTER, ALPHABETICAL_SORT, SCORE_SORT, SEARCH_RECIPE, GET_RECIPE_DETAILS,GET_THE_DIETS,DISH_TYPE_FILTER, CLEAN_DETAIL, GET_DB_RECIPES } from '../actions/types'
 
 const initialState = {
     recipes: [],
@@ -11,6 +12,16 @@ const initialState = {
 
 export default function rootReducer(state = initialState, action) {
     switch (action.type) {
+    
+      case GET_DB_RECIPES:
+        const array = state.allRecipes
+        
+          const filtrados =action.payload == "db" ? array.filter(receta => receta.createdAtDb) : array.filter(r => r)
+         
+         return{
+          ...state,
+          recipes:filtrados,
+         }
         case GET_RECIPES:
           return {
             ...state,
