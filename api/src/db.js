@@ -3,12 +3,10 @@ const { Sequelize } = require('sequelize');
 const fs = require('fs');
 const path = require('path');
 const {
-  DB_USER, DB_PASSWORD, DB_HOST,DB_NAME
+  DB_CONFIG
 } = process.env;
 
-const sequelize = new Sequelize(DB_NAME,DB_USER,DB_PASSWORD,{
-   host:DB_HOST,
-   port:"3306",
+const sequelize = new Sequelize(DB_CONFIG,{
    dialect:"mysql",
    pool:{
     max:5,
