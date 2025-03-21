@@ -5,7 +5,7 @@ import CreateRecipe from './components/CreateRecipe';
 import Details from './components/Details';
 import Landing from './components/Landing';
 import axios from "axios"
-axios.defaults.baseURL="https://app-comida-1.onrender.com" || "https://localhost:4000"
+axios.defaults.baseURL="https://app-comida-1.onrender.com"
 
 
 
